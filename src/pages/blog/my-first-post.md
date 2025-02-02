@@ -2,7 +2,7 @@
 layout: "@layouts/BaseLayout.astro"
 title: "My first post"
 date: 2025-02-02
-tags: "post"
+tags: ["post"]
 ---
 
 <h2> My first post </h2>
