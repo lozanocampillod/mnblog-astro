@@ -1,7 +1,106 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="About">
-  <h2>Welcome to the About page!</h2>
+  <h2>About me</h2>
+  <p class="text-sm">
+    I'm a mathematician with a focus on education and technology. My academic
+    journey spans pure mathematics, educational theory, and practical teaching
+    experience. Below you'll find my educational background and professional
+    experience.
+  </p>
+  <div class="space-y-8">
+    <section>
+      <h3>Education</h3>
+
+      <div class="space-y-6">
+        <div>
+          <h4>Master's Degree in Mathematics</h4>
+          <p class="text-sm text-text-alt">
+            2022 - 2023 • University of Murcia
+          </p>
+          <p class="text-sm">
+            Differential Geometry, Riemannian Geometry, Manifold Theory,
+            Functional Analysis, Measure Theory, Harmonic Analysis, Geometric
+            Analysis, Advanced PDEs, Spectral Theory, Lie Groups, Algebraic
+            Topology, Mathematical Physics
+          </p>
+        </div>
+
+        <div>
+          <h4>Master's Degree in Secondary Education Teaching</h4>
+          <p class="text-sm text-text-alt">
+            2022 - 2023 • University of Murcia
+          </p>
+          <p class="text-sm">
+            Mathematics Specialization: Educational Psychology, Mathematics
+            Pedagogy, Curriculum Development, Educational Technology, Assessment
+            Methods, Mathematics Education, Teaching Practice
+          </p>
+        </div>
+
+        <div>
+          <h4>Bachelor's Degree in Mathematics</h4>
+          <p class="text-sm text-text-alt">
+            2018 - 2022 • University of Murcia
+          </p>
+          <p class="text-sm">
+            Linear Algebra, Real & Complex Analysis, Abstract Algebra, Number
+            Theory, Topology, ODEs & PDEs, Multivariable Calculus, Probability
+            Theory, Mathematical Statistics, Numerical Analysis, Optimization
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Experience</h3>
+
+      <div class="space-y-6">
+        <div>
+          <h4>Machine Learning Engineer</h4>
+          <p class="text-sm text-text-alt">
+            May 2024 - December 2024 • Fever Labs, Madrid
+          </p>
+          <ul class="list-disc ml-4 text-sm space-y-2">
+            <li>
+              Implementation of optimization algorithms for resource allocation
+              and real-time dynamic pricing
+            </li>
+            <li>
+              MLOps with AWS, Datadog, various databases (Spark, Snowflake,
+              PostgreSQL, OpenSearch, DynamoDB, Redis)
+            </li>
+            <li>
+              Event-driven architecture using Kafka for real-time entity model
+              updates
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Fullstack Software Engineer</h4>
+          <p class="text-sm text-text-alt">
+            Jun 2023 - May 2024 • Fever Labs, Madrid
+          </p>
+          <ul class="list-disc ml-4 text-sm space-y-2">
+            <li>
+              Core development in Django monolith and microservices (Flask,
+              FastAPI)
+            </li>
+            <li>Frontend development with Angular and Astro</li>
+            <li>
+              A/B testing with Optimizely, analytics with Mixpanel and Metabase
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Languages</h3>
+      <p class="text-sm">German, Italian, Japanese</p>
+    </section>
+  </div>
 </BaseLayout>
