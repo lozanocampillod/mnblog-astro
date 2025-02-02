@@ -1,0 +1,39 @@
+---
+const { title = "David Lozano's Blog" } = Astro.props;
+import '../styles/global.css'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <table class="header">
+      <tr>
+        <td class="width-auto">
+          <h1 class="title">David Lozano</h1>
+          <span class="subtitle">Maths, ed, tech</span>
+        </td>
+        <td class="width-min">
+          <a href="/">Home</a>
+        </td>
+        <td class="width-min">
+          <a href="/blog">Blog</a>
+        </td>
+        <td class="width-min">
+          <a href="/projects">Projects</a>
+        </td>
+        <td class="width-min">
+          <a href="/about">About</a>
+        </td>
+      </tr>
+    </table>
+
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

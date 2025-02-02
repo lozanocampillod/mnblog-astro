@@ -1,16 +1,48 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home">
+  <h2>Welcome!</h2>
+  <p>
+    I'm a human interesded in maths, education, technology and the intersection
+    of these three fields. Currently I'm studying for becoming a high school
+    teacher at the public schooling system in Spain
+  </p>
+  <p>
+    My main interests are:
+    <ul>
+      <li>Mathematics</li>
+      <ul>
+        <li>
+          Algebra
+          <ul>
+            <li>Category Theory</li>
+            <li>Algebraic Geometry</li>
+          </ul>
+          <li>Geometry<ul><li>Euclidean Geometry</li></ul></li>
+          <li>
+            Probability Theory <ul>
+              <li>Information theory</li><li>Financial Mathematics</li>
+            </ul>
+          </li>
+        </li>
+        <li>
+          Education
+          <ul>
+            <li>Geogebra</li>
+            <li>Olympiad training</li>
+            <li>Technology</li>
+          </ul>
+        </li>
+        <li>
+          Technology
+          <ul>
+            <li>Web Development</li>
+            <li>Machine Learning</li>
+          </ul>
+        </li>
+      </ul>
+    </ul>
+  </p>
+</BaseLayout>
