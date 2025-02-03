@@ -1,13 +1,24 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-const posts = await Astro.glob("./*.md");
+
+interface Post {
+  [key: string]: {
+    frontmatter: {
+      title: string;
+      date: string;
+      tags: string[];
+    };
+    url: string;
+  };
+}
+const posts: Post = import.meta.glob("./*.md", { eager: true });
 ---
 
 <BaseLayout title="Blog">
   <h2>Blog</h2>
   <ul>
     {
-      posts.map((post) => (
+      Object.values(posts).map((post) => (
         <li>
           <div class="flex justify-between">
             <a href={post.url} class="underline">
