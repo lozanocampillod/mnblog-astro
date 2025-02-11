@@ -1,0 +1,22 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={frontmatter.title}>
+  <table class="header">
+    <tr>
+      <td class="width-auto">
+        <strong class="uppercase font-bold">{frontmatter.title}</strong>
+      </td>
+      <td class="width-min">
+        {new Date(frontmatter.date).toLocaleDateString()}
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">{frontmatter.tags?.join(", ")}</td>
+    </tr>
+  </table>
+  <slot />
+</BaseLayout>
