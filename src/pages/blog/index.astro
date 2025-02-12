@@ -24,12 +24,12 @@ const posts: Post = import.meta.glob("./*.md", { eager: true });
             <a href={post.url} class="underline">
               {post.frontmatter.title}
             </a>
-            <span class="text-sm ml-2">
+            <span class="ml-2">
               {new Date(post.frontmatter.date).toLocaleDateString()}
             </span>
           </div>
           {post.frontmatter.tags.map((tag: string) => (
-            <span class="text-sm ml-2">#{tag}</span>
+            <span class="ml-2">#{tag}</span>
           ))}
         </li>
       ))
